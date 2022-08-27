@@ -1,0 +1,99 @@
+/*ЗАГОЛОВОК СЕКЦІЇ*/
+.favorites__title {
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    text-align: center;
+    color: var(--pimary-text-color);
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+        line-height: 1.16;
+    }
+}
+
+/*ТЕКСТ СЕКЦІЇ*/
+.favorites__text {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    color: var(--pimary-text-color);
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.16;
+    }
+}
+
+/*СПИСОК СЕКЦІЇ*/
+.favorites__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 32px;
+    }
+}
+
+/*ЕЛЕМЕНТ СПИСКА*/
+.favorites__item:nth-child(n + 4) {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.favorites__item {
+    display: block;
+
+    @media screen and(min-width: 768px) {
+        flex-basis: calc((100% - 96px) / 2);
+
+        flex-grow: 1;
+    }
+
+    @media screen and(min-width: 1280px) {
+        flex-basis: calc((100% - 96px) / 3);
+    }
+}
+
+/*ОБГОРТКА КАРТИНКИ (ЖОВТИЙ КРУЖОК)*/
+.favorites__wrapper {
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 18px;
+    padding-right: 17px;
+    padding-bottom: 18px;
+    padding-left: 17px;
+    border: 11px solid var(--bg-color);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: var(--anim-hover);
+
+    @media screen and (min-width: 768px) {
+        .favorites__wrapper {
+            border: 14px var(--bg-color);
+            padding: 21px 20px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            .favorites__wrapper {
+                border: 16px var(--bg-color);
+                padding: 25px 24px;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            border-color: var(--accent-bg-color);
+        }
+    }
+}
