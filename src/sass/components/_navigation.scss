@@ -1,0 +1,24 @@
+.navigation {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__link {
+    color: var(--black-color);
+    padding: 28px 0;
+
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
+
+  &__link--current {
+    text-decoration: underline 1px var(--accent-bg-color);
+    color: var(--accent-bg-color);
+    font-weight: 500;
+  }
+}
