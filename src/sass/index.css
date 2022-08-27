@@ -80,6 +80,14 @@ p {
   }
 }
 
+button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
 .mobile-menu {
   position: fixed;
   top: 50px;
