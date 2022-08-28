@@ -31,6 +31,10 @@
     line-height: calc(19 / 16);
   }
 
+  &__link:focus {
+    color: #b5ff00;
+  }
+
   &__link--current {
     background-color: var(--accent-bg-color);
   }
