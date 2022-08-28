@@ -1,13 +1,13 @@
 <section class="hero section">
-    <div class="container">
-      <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
-      <p class="hero__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-      </p>
-      <button class="hero-btn" type="button">Order Now</button>
-      <!-- <div class="slider">
+  <div class="container">
+    <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+    <p class="hero__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+    </p>
+    <button class="hero-btn" type="button">Order Now</button>
+    <!-- <div class="slider">
           <div class="slider-line">
             <picture>
               <source class="slider-img" media="" srcset="">
@@ -20,96 +20,94 @@
             </picture>
   
           </div>-->
+  </div>
+</section>
+
+<section class="section offerings">
+  <div class="container">
+    <div class="apple-container">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero-img/apple@1x_lg.png 1x,
+            ./images/hero-img/apple@2x_lg.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero-img/apple-1@1x_md.png 1x,
+            ./images/hero-img/apple-1@2x_md.png 2x
+          "
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero-img/aple@1x_sm.png 1x,
+            ./images/hero-img/aple@2x_sm.png 2x
+          "
+        />
+
+        <img
+          class="apple-item__img"
+          src="./images/hero-img/aple@1x_sm.png"
+          alt=""
+        />
+      </picture>
+      <div class="radial-gradient"></div>
     </div>
-  </section>
-  
-  <section class="section offerings">
-    <div class="container">
-      <div class="apple-container">
-        <picture>
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./images/hero-img/apple@1x_lg.png 1x,
-              ./images/hero-img/apple@2x_lg.png 2x
-            "
-          />
-  
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hero-img/apple-1@1x_md.png 1x,
-              ./images/hero-img/apple-1@2x_md.png 2x
-            "
-          />
-  
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./images/hero-img/aple@1x_sm.png 1x,
-              ./images/hero-img/aple@2x_sm.png 2x
-            "
-          />
-  
-          <img
-            class="apple-item__img"
-            src="./images/hero-img/aple@1x_sm.png"
-            alt=""
-          />
-        </picture>
-        <div class="radial-gradient">
-        </div>
-      </div>
-      <h1 class="offerings-titles">Whats Special About Our Offerings</h1>
-      <p class="offerings-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-      </p>
-  
-      <ul>
-        <li>
-          <a class="offerings-link" href="">
-            <svg class="" width="32" height="32">
-              <use href="./images/hero-img/hero.svg#icon-hero-svg1"></use>
-            </svg>
-          </a>
-  
-          <h2 class="secondary-titles">Fasest Delivery</h2>
-          <p class="offerings-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros.
-          </p>
-        </li>
-        <li>
-          <a class="offerings-link" href="">
-            <svg class="" width="32" height="32">
-              <use href="./images/hero-img/hero.svg#icon-hero-svg2"></use>
-            </svg>
-          </a>
-          <h2 class="secondary-titles">Easy to order</h2>
-          <p class="offerings-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros.
-          </p>
-        </li>
-      </ul>
-  
-      <ul class="offerings-btn-list">
-        <li>
-          <button class="offerings-btn offerings-btn--white" type="button">
-            Order Now
-          </button>
-        </li>
-        <li>
-          <button class="offerings-btn offerings-btn--no-color" type="button">
-            Read More
-            <svg class="offerings-btn__cvg" width="14" height="14">
-              <use href="./images/hero-img/hero.svg#icon-chevron-down"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-  </section>
-  
+    <h1 class="offerings-titles">Whats Special About Our Offerings</h1>
+    <p class="offerings-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+    </p>
+
+    <ul>
+      <li>
+        <a class="offerings-link" href="">
+          <svg class="" width="32" height="32">
+            <use href="./images/icons.svg#rocket"></use>
+          </svg>
+        </a>
+
+        <h2 class="secondary-titles">Fasest Delivery</h2>
+        <p class="offerings-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros.
+        </p>
+      </li>
+      <li>
+        <a class="offerings-link" href="">
+          <svg class="" width="32" height="32">
+            <use href="./images/icons.svg#touch"></use>
+          </svg>
+        </a>
+        <h2 class="secondary-titles">Easy to order</h2>
+        <p class="offerings-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros.
+        </p>
+      </li>
+    </ul>
+
+    <ul class="offerings-btn-list">
+      <li>
+        <button class="offerings-btn offerings-btn--white" type="button">
+          Order Now
+        </button>
+      </li>
+      <li>
+        <button class="offerings-btn offerings-btn--no-color" type="button">
+          Read More
+          <svg class="offerings-btn__cvg" width="14" height="14">
+            <use href="./images/icons.svg#right-arrow"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
