@@ -1,0 +1,30 @@
+.navigation {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__link {
+    color: var(--black-color);
+    padding: 28px 0;
+
+    font-size: 14px;
+    line-height: calc(16 / 14);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  :focus {
+    color: #b5ff00;
+  }
+
+  &__link--current {
+    text-decoration: underline 1px var(--accent-bg-color);
+    color: var(--accent-bg-color);
+  }
+}
