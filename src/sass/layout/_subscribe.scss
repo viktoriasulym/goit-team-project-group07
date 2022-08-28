@@ -1,0 +1,86 @@
+.subscribe{
+&__container {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) rgba(254, 254, 254, 1)
+    );
+    padding-top: 73px;
+    padding-bottom: 100px;
+    @media screen and (min-width: 1280px) {
+       margin-top: -100px;
+    }
+  }
+  
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(34 / 28);
+  
+    color: var(--main-txt-color);
+  
+    @media screen and (min-width: 768px) {
+      font-size: 42px;
+      line-height: calc(50 / 42);
+    }
+  }
+  &__title-position {
+    margin-bottom: 20px;
+  }
+  &__sub-title {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  
+    color: var(--main-txt-color);
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: calc(24 / 16);
+      width: 656px;
+    }
+  }
+  &__forms {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__sub-title-position {
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 24px;
+    }
+  }
+  &__email-forms {
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-right: 18px;
+      margin-bottom: 0;
+    }
+  }
+  &__email-input {
+    border: 1px solid #ffe550;
+    border-radius: 30px;
+    height: 42px;
+    width: 100%;
+    padding-left: 12px;
+    @media screen and (min-width: 768px) {
+      width: 394px;
+    }
+  }
+  
+  &__btn {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+  
+    color: var(--main-txt-color);
+  
+    padding: 11px 22px;
+    background: #bbf330;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
+  }
+}
