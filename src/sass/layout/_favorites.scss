@@ -33,80 +33,57 @@
 
 /*СПИСОК СЕКЦІЇ*/
 .favorites__list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-  
 
+    
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: repeat(1, 1fr);
 
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-@media screen and (min-width: 768px) {
-    .favorites__list {
-       
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        flex-grow: 1;
-        
+        @media screen and (min-width: 1280px) {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-
-/*ЕЛЕМЕНТ СПИСКА*/
 .favorites__item {
-    list-style: none;
-    justify-content: center;
+    display: inline-flex;
     align-items: center;
-    display: flex;
+    justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-    .favorites__item {
-        flex-wrap: nowrap;
+.favorites__item--none {
+    
+    
+@media screen and (max-width: 767px ) {
+        display: none;
     }
+
 }
 
-.favorites__item:nth-child(n + 4) {
-    display: none;
-}
 
-@media screen and (min-width: 768px) {
-    .favorites__item:nth-child(n + 4) {
-        display: flex;
-    }
-}
-
-/*ОБГОРТКА КАРТИНКИ (ЖОВТИЙ КРУЖОК)*/
 .favorites__wrapper {
-    display: inline-block;
-    padding-top: 18px;
-    padding-right: 17px;
-    padding-bottom: 18px;
-    padding-left: 17px;
-    border: 11px solid #ffe550;
+    border: 11px solid var(--bg-color);
     border-radius: 50%;
+    padding: 18px 17px;
     overflow: hidden;
-}
 
-@media screen and (min-width: 767px) {
-    .favorites__wrapper {
+    transition: border-color var(--anim-hover);
 
-      
-        border: 14px solid #ffe550;
+@media screen and (min-width: 768px) {
+        border: 14px solid var(--bg-color);
         padding: 21px 20px;
     }
-}
 
-@media screen and (min-width: 768px) {
-    .favorites__wrapper {
-       
-        border: 16px solid #ffe550;
+   @media screen and (min-width: 1280px) {
+        border: 16px solid var(--bg-color);
         padding: 25px 24px;
     }
 }
 
 .favorites__wrapper:hover {
-    border-color: #bbf330;
+    border-color: var(--accent-bg-color);
 }
+
