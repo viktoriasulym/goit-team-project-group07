@@ -1,29 +1,36 @@
-<section class="hero section">
-  <div class="container">
-    <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
-    <p class="hero__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-    </p>
-    <button class="hero-btn" type="button">Order Now</button>
-    <!-- <div class="slider">
-      <div class="slider-line">
-        <picture>
-          <source class="slider-img" media="" srcset="" />
-
-          <source class="slider-img" media="" srcset="" />
-          <source class="slider-img" media="" srcset="" />
-          <source class="slider-img" media="" srcset="" />
-
-          <img class="slider-img" src="" alt="" />
-        </picture>
-      </div>
-    </div> -->
+<section class="hero" id="hero" >
+  <div class="container hero-container" >
+    <div class="hero-information">
+      <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <button class="hero-btn" type="button">Order Now</button>
+    </div>
+    <div class="slider">
+      <picture class="slider-item__img">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/hero-img/slider-img@1x_lg.png 1x,
+            ./images/hero-img/slider-img@2x_lg.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero-img/slider-img_@1x_md.png 1x,
+            ./images/hero-img/slider-img_@2x_md.png 2x
+          "
+        />
+        <img class="" src="./images/hero-img/slider-img_@1x_md.png" alt="" />
+      </picture>
+    </div>
   </div>
 </section>
-
-<section class="section offerings">
+<section class="section offerings" id="offerings">
   <div class="container offerings-container">
     <div class="apple">
       <div class="apple-container">
@@ -35,7 +42,6 @@
               ./images/hero-img/apple@2x_lg.png 2x
             "
           />
-
           <source
             media="(min-width: 768px)"
             srcset="
@@ -43,7 +49,6 @@
               ./images/hero-img/apple-1@2x_md.png 2x
             "
           />
-
           <source
             media="(max-width: 767px)"
             srcset="
@@ -51,7 +56,6 @@
               ./images/hero-img/aple@2x_sm.png 2x
             "
           />
-
           <img class="" src="./images/hero-img/aple@1x_sm.png" alt="" />
         </picture>
         <div class="radial-gradient"></div>
@@ -65,7 +69,6 @@
               ./images/hero-img/apple-2@2x_md.png 2x
             "
           />
-
           <img class="" src="./images/hero-img/apple-2@1x_md.png" alt="" />
         </picture>
         <picture>
@@ -76,7 +79,6 @@
               ./images/hero-img/apple-3@2x_md.png 2x
             "
           />
-
           <img class="" src="./images/hero-img/apple-3@1x_md.png" alt="" />
         </picture>
       </div>
@@ -97,7 +99,6 @@
               <use href="./images/icons.svg#icon-hero-svg1"></use>
             </svg>
           </a>
-
           <h2 class="secondary-titles">Fasest Delivery</h2>
           <p class="offerings-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
