@@ -548,11 +548,17 @@ img {
       margin: -1px;
     }
 
+
+    &:hover {
+      border: 23px solid var(--accent-bg-color);
+      cursor: pointer;
+
     @media screen and (min-width: 768px) {
       width: 320px;
       height: 320px;
       bottom: 33%;
       left: 54%;
+
     }
 
     @media screen and (min-width: 1280px) {
