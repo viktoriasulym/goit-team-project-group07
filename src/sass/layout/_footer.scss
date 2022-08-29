@@ -4,57 +4,47 @@
       padding: 60px 0;
       background-color: #fefefe;
       box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+        background-image: url(../images/footer/bg-2@1x_sm.webp),
+            url(../images/footer/bg-3@1x_sm-1.webp),
+            url(../images/footer/bg-3@1x_sm.webp);
 
       background-repeat: no-repeat;
       background-position: 0 132px, bottom, top right;
       background-size: 110px 116px, 253px 66px, 104px 259px;
 
-  @media screen and(max-width:480px) {
-    padding-bottom: 60px;
-    padding-top: 60px;
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/footer/bg-2@2x_sm.webp),
+      url(../images/footer/bg-3@2x_sm-1.webp),
+      url(../images/footer/bg-3@2x_sm.webp);
   }
 
-  @media screen and(min-width:768px) {
-    padding-bottom: 100px;
-    padding-top: 100px;
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+    background-image: url(../images/footer/bg-1@1x_md.webp),
+      url(../images/footer/bg-2@1x_md.webp);
+    background-position: bottom, top right;
+    background-size: 785px 141px, 203px 365px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/footer/bg-1@2x_md.webp),
+        url(../images/footer/bg-2@2x_md.webp);
+    }
   }
 
-  @media screen and(min-width: 320px) {
-    background-size: 55px, 79px, 80px, 72px, 105px, 104px, 60px, 91px;
-    background-position: left top 137px, bottom left 43px, bottom right 24px,
-      bottom left 71px, bottom right 89px, top right, top 25px right,
-      left top 111px;
-    background-image: url(../images/footer/fbg7-mob.jpg),
-      url(../images/footer/fbg2-mob.jpg), url(../images/footer/fbg8-mob.jpg),
-      url(../images/footer/fbg3-mob.jpg), url(../images/footer/fbg6-mob.jpg),
-      url(../images/footer/fbg5-mob.jpg), url(../images/footer/fbg4-mob.jpg),
-      url(../images/footer/fbg1-mob.jpg);
-  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/footer/bg@1x_lg.webp);
+    background-size: 100%;
+    background-position: bottom;
 
-  @media screen and(min-width: 768px) {
-    background-size: 168px, 171px, 203px, 96px, 170px, 153px, 221px, 184px;
-    background-position: bottom left 136px, bottom right 94px, top right,
-      bottom 141px right, bottom right, left 197px bottom, right 223px bottom,
-      left bottom;
-    background-image: url(../images/footer/fbg2-tab.jpg),
-      url(../images/footer/fbg7-tab.jpg), url(../images/footer/fbg5-tab.jpg),
-      url(../images/footer/fbg4-tab.jpg), url(../images/footer/fbg8-tab.jpg),
-      url(../images/footer/fbg3-tab.jpg), url(../images/footer/fbg6-tab.jpg),
-      url(../images/footer/fbg1-tab.jpg);
-  }
-
-  @media screen and(min-width: 1280px) {
-    background-position: top 129px left 324px, bottom left 216px,
-      bottom right 134px, bottom left 53px, bottom right 16px, bottom left 281px,
-      bottom center, bottom right 282px;
-    background-size: 526px, 178px, 182px, 196px, 181px, 163px, 380px, 235px;
-    width: 100%;
-
-    background-image: url(../images/footer/fbg5.jpg),
-      url(../images/footer/fbg2.jpg), url(../images/footer/fbg7.jpg),
-      url(../images/footer/fbg1.jpg), url(../images/footer/fbg8.jpg),
-      url(../images/footer/fbg3.jpg), url(../images/footer/fbg4.jpg),
-      url(../images/footer/fbg6.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/footer/bg@2x_lg.webp);
+    }
   }
 }
 .footer__wrap {
