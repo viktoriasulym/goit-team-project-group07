@@ -1,0 +1,41 @@
+.header {
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__navigation {
+    margin-right: 28px;
+  }
+
+  &__button {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
