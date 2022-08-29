@@ -548,53 +548,52 @@ img {
       margin: -1px;
     }
 
-
     &:hover {
       border: 23px solid var(--accent-bg-color);
       cursor: pointer;
 
-    @media screen and (min-width: 768px) {
-      width: 320px;
-      height: 320px;
-      bottom: 33%;
-      left: 54%;
-
-    }
-
-    @media screen and (min-width: 1280px) {
-      width: 580px;
-      height: 580px;
-
-      top: 12%;
-      left: 51%;
-      .slider:focus {
-        border: 9px solid var(--accent-bg-color);
-        cursor: pointer;
+      @media screen and (min-width: 768px) {
+        width: 320px;
+        height: 320px;
+        bottom: 33%;
+        left: 54%;
       }
 
-      &:hover {
-        border: 9px solid var(--accent-bg-color);
-        cursor: pointer;
+      @media screen and (min-width: 1280px) {
+        width: 580px;
+        height: 580px;
+
+        top: 12%;
+        left: 51%;
+        .slider:focus {
+          border: 9px solid var(--accent-bg-color);
+          cursor: pointer;
+        }
+
+        &:hover {
+          border: 9px solid var(--accent-bg-color);
+          cursor: pointer;
+        }
       }
     }
-  }
 
-  .slider-item__img {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 528px;
-    height: 528px;
-
-    @media screen and (min-width: 768px) {
-      width: 292px;
-      height: 292px;
-    }
-
-    @media screen and (min-width: 1280px) {
+    .slider-item__img {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
       width: 528px;
       height: 528px;
+
+      @media screen and (min-width: 768px) {
+        width: 292px;
+        height: 292px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        width: 528px;
+        height: 528px;
+      }
     }
   }
 }
