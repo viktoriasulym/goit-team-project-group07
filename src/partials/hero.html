@@ -24,11 +24,13 @@
   </section>
   
   <section class="section offerings">
-    <div class="container">
+    <div class="container offerings-container">
+        
+        <div class="apple">
       <div class="apple-container">
-        <picture>
+        <picture class="apple-item__img">
           <source
-            media="(min-width: 1200px)"
+            media="(min-width: 1280px)"
             srcset="
               ./images/hero-img/apple@1x_lg.png 1x,
               ./images/hero-img/apple@2x_lg.png 2x
@@ -52,7 +54,7 @@
           />
   
           <img
-            class="apple-item__img"
+            class=""
             src="./images/hero-img/aple@1x_sm.png"
             alt=""
           />
@@ -60,18 +62,58 @@
         <div class="radial-gradient">
         </div>
       </div>
+<div class="apple-container--tablet">
+    <picture>
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero-img/apple-2@1x_md.png 1x,
+            ./images/hero-img/apple-2@2x_md.png 2x
+          "
+        />
+
+        <img
+          class=""
+          src="./images/hero-img/apple-2@1x_md.png"
+          alt=""
+        />
+    </picture>
+        <picture>
+
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/hero-img/apple-3@1x_md.png 1x,
+                ./images/hero-img/apple-3@2x_md.png 2x
+              "
+            />
+    
+            <img
+              class=""
+              src="./images/hero-img/apple-3@1x_md.png"
+              alt=""
+            />
+
+
+        </picture>
+</div>
+
+    </div>
+    <div class="about-offerings">
+    <div class="special">
       <h1 class="offerings-titles">Whats Special About Our Offerings</h1>
-      <p class="offerings-text">
+      <p class="offerings-text--main">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
         ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
       </p>
-  
-      <ul>
+    </div>
+      <ul class="our-advantages">
         <li>
           <a class="offerings-link" href="">
             <svg class="" width="32" height="32">
-              <use href="./images/hero-img/hero.svg#icon-hero-svg1"></use>
+              <use href="./images/icons.svg#icon-hero-svg1"></use>
             </svg>
           </a>
   
@@ -84,7 +126,7 @@
         <li>
           <a class="offerings-link" href="">
             <svg class="" width="32" height="32">
-              <use href="./images/hero-img/hero.svg#icon-hero-svg2"></use>
+              <use href="./images/icons.svg#icon-hero-svg2"></use>
             </svg>
           </a>
           <h2 class="secondary-titles">Easy to order</h2>
@@ -94,7 +136,6 @@
           </p>
         </li>
       </ul>
-  
       <ul class="offerings-btn-list">
         <li>
           <button class="offerings-btn offerings-btn--white" type="button">
@@ -105,11 +146,12 @@
           <button class="offerings-btn offerings-btn--no-color" type="button">
             Read More
             <svg class="offerings-btn__cvg" width="14" height="14">
-              <use href="./images/hero-img/hero.svg#icon-chevron-down"></use>
+              <use href="./images/icons.svg#icon-chevron-down"></use>
             </svg>
           </button>
         </li>
       </ul>
+    </div>
     </div>
   </section>
   
