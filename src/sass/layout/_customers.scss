@@ -178,7 +178,7 @@
   position: relative;
   bottom: -77px;
   margin: auto;
-  z-index: -1;
+  z-index: 1;
 
   @media screen and (min-width: 768px) {
     bottom: -35px;
