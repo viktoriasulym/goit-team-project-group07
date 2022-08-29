@@ -17,14 +17,11 @@
     background-position: left top 137px, bottom left 43px, bottom right 24px,
       bottom left 71px, bottom right 89px, top right, top 25px right,
       left top 111px;
-    background-image: url(../src/images/footer/fbg7-mob.jpg),
-      url(../src/images/footer/fbg2-mob.jpg),
-      url(../src/images/footer/fbg8-mob.jpg),
-      url(../src/images/footer/fbg3-mob.jpg),
-      url(../src/images/footer/fbg6-mob.jpg),
-      url(..src/images/footer/fbg5-mob.jpg),
-      url(../src/images/footer/fbg4-mob.jpg),
-      url(../src/images/footer/fbg1-mob.jpg);
+    background-image: url(../images/footer/fbg7-mob.jpg),
+      url(../images/footer/fbg2-mob.jpg), url(../images/footer/fbg8-mob.jpg),
+      url(../images/footer/fbg3-mob.jpg), url(../images/footer/fbg6-mob.jpg),
+      url(../images/footer/fbg5-mob.jpg), url(../images/footer/fbg4-mob.jpg),
+      url(../images/footer/fbg1-mob.jpg);
   }
 
   @media screen and(min-width: 768px) {
@@ -32,14 +29,11 @@
     background-position: bottom left 136px, bottom right 94px, top right,
       bottom 141px right, bottom right, left 197px bottom, right 223px bottom,
       left bottom;
-    background-image: url(../src/images/footer/fbg2-tab.jpg),
-      url(../src/images/footer/fbg7-tab.jpg),
-      url(../src/images/footer/fbg5-tab.jpg),
-      url(../src/images/footer/fbg4-tab.jpg),
-      url(../src/images/footer/fbg8-tab.jpg),
-      url(../src/images/footer/fbg3-tab.jpg),
-      url(../src/images/footer/fbg6-tab.jpg),
-      url(../src/images/footer/fbg1-tab.jpg);
+    background-image: url(../images/footer/fbg2-tab.jpg),
+      url(../images/footer/fbg7-tab.jpg), url(../images/footer/fbg5-tab.jpg),
+      url(../images/footer/fbg4-tab.jpg), url(../images/footer/fbg8-tab.jpg),
+      url(../images/footer/fbg3-tab.jpg), url(../images/footer/fbg6-tab.jpg),
+      url(../images/footer/fbg1-tab.jpg);
   }
 
   @media screen and(min-width: 1280px) {
@@ -49,11 +43,11 @@
     background-size: 526px, 178px, 182px, 196px, 181px, 163px, 380px, 235px;
     width: 100%;
 
-    background-image: url(../src/images/footer/fbg5.jpg),
-      url(../src/images/footer/fbg2.jpg), url(../src/images/footer/fbg7.jpg),
-      url(../src/images/footer/fbg1.jpg), url(../src/images/footer/fbg8.jpg),
-      url(../src/images/footer/fbg3.jpg), url(../src/images/footer/fbg4.jpg),
-      url(../src/images/footer/fbg6.jpg);
+    background-image: url(../images/footer/fbg5.jpg),
+      url(../images/footer/fbg2.jpg), url(../images/footer/fbg7.jpg),
+      url(../images/footer/fbg1.jpg), url(../images/footer/fbg8.jpg),
+      url(../images/footer/fbg3.jpg), url(../images/footer/fbg4.jpg),
+      url(../images/footer/fbg6.jpg);
   }
 }
 
