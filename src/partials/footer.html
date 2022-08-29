@@ -26,23 +26,27 @@
               <a class="footer__link" href="#subscribe">Contact</a>
             </li>
           </ul>
-      
+      </div>
         <!--  -->
-        <div class="footer__subscribe">
-          <h2 class="footer__title">Subscribe</h2>
-          <form class="footer__form">
-            <input class="subscribtion-form__input footer-label__input" 
-            type="email" 
-            name="email" 
-            placeholder="Enter your email"
+      <form class="footer__form" name="signup_form" autocomplete="on" novalidate>
+        <div class="input-wrap">
+          <input class="subscribtion-form__input footer-label__input" type="email" name="email" placeholder="Enter your email"
             pattern="^(.+)@(\ S+)$" id="footer-form__title" />
-            <button type="submit" class="footer__btn">Subscribe</button>
-            <a class="privacy__link" href=""
-              >By subscribing you agree to with our
-              <span class="privacy__color">Privacy Policy</span>
-            </a>
-          </form>
+          <label class="subscribtion-form__title subscribtion-form__title--footer" for="footer-form__title">
+            <svg class="subscribtion-form__icon" width="12" height="12">
+              <use class="subscribtion-form__error" href="./images/icons.svg#error"></use>
+            </svg>
+            <span class="subscribtion-form__text-error subscribtion-form__text-error--footer">Not a valid email address
+              (example@email.com)</span>
+          </label>
         </div>
+        <button class="btn footer__btn" type="submit">Subscribe</button>
+      </form>
+      
+      <p class="footer__text">
+        By subscribing you agree to with our
+        <a class="footer__link-doc" href="">Privacy Policy</a>
+      </p>
       </div>
       <div class="footer__info">
         <ul class="footer-info__list">
