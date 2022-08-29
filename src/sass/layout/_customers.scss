@@ -1,24 +1,69 @@
-.сustomers__container {
-  padding-top: 60px;
-  padding-bottom: 50px;
-
+.сustomers {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  background-image: url(../images/сustomers-say/rectangle320.png);
+    background-image: url(../images/сustomers-say/rectangle320.png);
+  
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/сustomers-say/rectangle768.png);
-    padding-top: 60px;
-    height: 554px;
   }
   @media screen and (min-width: 1280px) {
     background-image: url(../images/сustomers-say/rectangle1280.png);
+  }
+}
+.сustomers__container {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    height: 554px;
+  }
+  @media screen and (min-width: 1280px) {
     padding-top: 100px;
     height: 654px;
   }
 }
+// .customers__container{
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+
+//   @media screen and (max-width: 767px) {
+//     background-image: url(../images/сustomers-say/rectangle320.png);
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/сustomers-say/rectangle-320@2x.png);
+//     }
+//     background-size: cover;
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     background-image: url(../images/сustomers-say/rectangle768.png);
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/сustomers-say/rectangle-768@2x.png);
+//     }
+//     background-size: cover;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     background-image: url(../images/сustomers-say/rectangle1280.png);
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/сustomers-say/rectangle-1280@2x.png);
+//     }
+//     max-width: 1600px;
+//   }
+
+// }
 .customers__stars-container {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -26,7 +71,6 @@
   }
   @media screen and (min-width: 1280px) {
     gap: 139px;
-
   }
 }
 .customers__stars {
@@ -71,8 +115,7 @@
 }
 .customers__title-position {
   margin-bottom: 20px;
-
- }
+}
 .customers__sub-title {
   font-size: 14px;
   line-height: calc(16 / 14);
