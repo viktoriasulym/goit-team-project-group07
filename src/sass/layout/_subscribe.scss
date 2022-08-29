@@ -69,7 +69,7 @@
     color: var(--main-txt-color);
 
     padding: 11px 22px;
-    background: #bbf330;
+    background-color: #bbf330;
     border-radius: 30px;
     cursor: pointer;
     border: none;
@@ -77,6 +77,20 @@
     margin-left: auto;
     @media screen and (min-width: 768px) {
       margin: 0;
+      transition: background-color 250ms cubic-bezier(.4, 0, .2, 1);
     }
   }
+  &__btn:hover,
+  &__btn:focus{
+  background-color: #B5FF00;
+  }
+  .alert--warning{
+    color: blue;
+    opacity: 0;
+  }
+  .modal-form__input:not(:placeholder-shown) ~ .alert--warning, 
+  .modal-form__input:not(:placeholder-shown) ~ .alert-icon--warning:not(:placeholder-shown) ~ .alert--warning{
+    opacity: 1;
+  }
+
 }
