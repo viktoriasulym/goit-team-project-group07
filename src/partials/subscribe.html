@@ -1,0 +1,59 @@
+<section class="subscribe" id="subscribe">
+    <div class="subscribe__container container">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/subscribe/pngwing1280@1x.png 1x,
+            ./images/subscribe/pngwing1280@2x.png 2x
+          "
+          type="image/png"
+        />
+  
+        <source
+          media="(min-width: 768px)"
+          srcset="
+          ./images/subscribe/pngwing768@1x.png 1x,
+          ./images/subscribe/pngwing768@2x.png 2x
+          "
+          type="image/png"
+        />
+  
+        <source
+          media="(max-width: 767px)"
+          srcset="
+          ./images/subscribe/pngwing320@1x.png 1x,
+          ./images/subscribe/pngwing320@2x.png 2x
+          "
+          type="image/png"
+        />
+  
+        <img
+          class="subscribe__img"
+          src="./images/subscribe/pngwing.png"
+          alt="subscribe-img"
+        />
+      </picture>
+      <h2 class="subscribe__title subscribe__title-position">Subscribe To Get Special Offers</h2>
+      <p class="subscribe__sub-title subscribe__sub-title-position">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <div class="subscribe__forms">
+        <form  class="subscribe__email-forms" name="subscribe__email-forms">
+          <label class="subscribe__email">
+            <input
+              class="subscribe__email-input"
+              type="email"
+              name="email"
+              id="e-mail"
+              placeholder="Enter your email"
+            />
+            <span class="alert--warning">Not a valid email address (example@email.com)</span>
+          </label>
+        </form>
+        <button class="subscribe__btn" type="submit">Subscribe</button>
+      </div>
+    </div>
+  </section>
+  
